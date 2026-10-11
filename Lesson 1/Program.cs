@@ -10,27 +10,24 @@
 namespace Lesson_1
 {
     /// <summary>
-    /// Class program
+    /// Demonstrates the arithmetic operations in <see cref="Operations"/>.
     /// </summary>
-    class Program
+    internal static class Program
     {
+        #region Entry point
+
         /// <summary>
-        /// Main entry point for the application.
+        /// Runs the arithmetic examples.
         /// </summary>
-        /// <param name="args"></param>
-        static void Main(string[] args)
+        /// <param name="args">Command-line arguments (not used).</param>
+        private static void Main(string[] args)
         {
-            int result = Operations.Sum(10, 20);
-            Console.WriteLine($"The result of the sum is: {result}");
-            
-            result = Operations.Sub(10, 20);
-            Console.WriteLine($"The result of the subtraction is: {result}");
-            
-            result = Operations.Mul(10, 20);
-            Console.WriteLine($"The result of the multiplication is: {result}");
-            
-            result = Operations.Div(10, 20);
-            Console.WriteLine($"The result of the division is: {result}");
+            Console.WriteLine($"The result of the sum is: {Operations.Sum(10, 20)}");
+            Console.WriteLine($"The result of the subtraction is: {Operations.Sub(10, 20)}");
+            Console.WriteLine($"The result of the multiplication is: {Operations.Mul(10, 20)}");
+            Console.WriteLine($"The result of the division is: {Operations.Div(10, 20)}");
         }
+
+        #endregion
     }
 }
