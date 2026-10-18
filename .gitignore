@@ -2,3 +2,10 @@
 **/obj/
 .idea/
 .vs/
+.env
+*.env
+**/.env
+**/*.env
+!.env.example
+!**/.env.example
+*.DotSettings.user
